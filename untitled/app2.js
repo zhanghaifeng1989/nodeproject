@@ -10,6 +10,7 @@ var users = require('./routes/users');
 var pdts = require('./routes/product');
 var cars = require('./routes/cars');
 var loc = require('./routes/location');
+var locserv = require('./routes/locationserver');
 
 
 var app = express();
@@ -31,6 +32,7 @@ app.use('/users', users);
 app.use('/pdt', pdts);
 app.use('/cars',cars);
 app.use('/loc',loc);
+app.use('/locserv',locserv);
 
 
 // catch 404 and forward to error handler
