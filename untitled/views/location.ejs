@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+</head>
+
+<body>
+
+<form action="loc/add" method="post">
+    <p>
+        设备：<input name="device" value="<%=(typeof obj!='undefined')?obj.device:""%>"/>
+    </p>
+    <p>
+         lon：<input name="lon" value="<%=(typeof obj!='undefined')?obj.lon:""%>"/>
+    </p>
+    <p>
+        lat：<input name="lat" value="<%=(typeof obj!='undefined')?obj.lat:""%>"/>
+    </p>
+    <p>
+        address：<input name="address" value="<%=(typeof obj!='undefined')?obj.address:""%>"/>
+    </p>
+    <p>
+        time：<input name="time" value="<%=(typeof obj!='undefined')?obj.time:""%>"/>
+    </p>
+    <button>添加</button>
+</form>
+
+
+
+
+</body>
+
+</html>
